@@ -1,27 +1,9 @@
-{- Author: Matthew Wraith - 4/9/13
- - NetId: wraith1
- - CS 418 - Prof. John C. Hart
- - Credits: Three (3) Credits
- -
- - Compilation instructions: I've included a Makefile. Simply, make && ./Main 
- - to run this. If for some reason the Makefile does not work, this should:
- -
- - ghc --make -O2 Main.hs
- -
- - GHC will take care of the rest.
- -
- - Teapot Contest - This program makes a teapot with a sphere environment mapping
- -}
+-- Author: Matthew Wraith
 
 module Main where
 
-import Vec
-import Camera
-import ObjFile
-import Teapot
-
-import TGA
-
+import Graphics.Rendering.OpenGL
+import Graphics.UI.GLUT
 import System.Exit (exitSuccess)
 import Data.IORef
 import Control.Concurrent (threadDelay)
@@ -29,8 +11,12 @@ import Control.Monad
 import Control.Applicative
 import qualified Data.Vector as V
 
-import Graphics.Rendering.OpenGL
-import Graphics.UI.GLUT
+import TGA
+
+import Vec
+import Camera
+import ObjFile
+import Teapot
 
 -- Draw a green grid
 drawGrid = do

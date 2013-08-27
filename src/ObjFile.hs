@@ -1,12 +1,11 @@
 -- Author: Matthew Wraith
--- NetId: wraith1
 
 module ObjFile where
 
+import Graphics.Rendering.OpenGL
+
 import Vec
 import VecGL
-
-import Graphics.Rendering.OpenGL
 
 -- Read a GLdouble from a string
 readGLdouble :: String -> GLdouble

@@ -1,13 +1,11 @@
 -- Author: Matthew Wraith
--- NetId: wraith1
 
 module Teapot where
 
-import qualified Data.Vector as V
-import Control.Monad
-
 import Graphics.Rendering.OpenGL
 import Graphics.UI.GLUT
+import qualified Data.Vector as V
+import Control.Monad
 
 -- Data structure for holding the model
 -- We have vertex, normal, and texture data

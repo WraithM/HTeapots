@@ -1,5 +1,4 @@
 -- Author: Matthew Wraith
--- netid: wraith1
 
 module Camera where
 

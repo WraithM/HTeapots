@@ -1,5 +1,4 @@
 -- Author: Matthew Wraith
--- NetId: wraith1
 
 module VecGL where
 
