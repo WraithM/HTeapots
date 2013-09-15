@@ -12,9 +12,10 @@ I've included a Setup.hs.
 
 Simply,
 
+```
 cabal configure
 cabal build
-
+```
  
 Instructions on use
 -------------------
@@ -24,6 +25,7 @@ This program goes full screen! Q to quit.
 
 Keyboard commands
 -----------------
+```
 Q:      Quit the program
 W, S:   Move forward 
 D, A:   Rotate the camera in the x-z plane
@@ -34,5 +36,5 @@ Left and right arrow keys:  Strafe the camera
 K, I, J, L: Move one of the teapots in the x-z plane
 U, N:   Move one teapot vertically
 R:      Rotate the teapot under control
-
+```
 
